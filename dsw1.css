@@ -1,0 +1,195 @@
+/* Import skautských písem */
+
+@font-face {
+    font-family: 'skautbold';
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot');
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff') format('woff'),
+         url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff2') format('woff2'),
+         url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.otf') format('opentype'),
+         url('https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff') format('woff'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400.woff2') format('woff2'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400.otf') format('opentype'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400.svg#themix') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff') format('woff'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff2') format('woff2'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.otf') format('opentype'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_400i.svg#themix') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff') format('woff'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700.woff2') format('woff2'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700.otf') format('opentype'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700.svg#themix') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themix';
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot? #iefix') format('embedded-opentype');
+    src: url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff') format('woff'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff2') format('woff2'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.otf') format('opentype'),
+         url('https://cdn.skauting.cz/fonts/TheMix_LT_700i.svg#themix') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Nastavení The Mix jako základního písma a barvy na tmavě modrou */
+
+body {
+    font-family: themix, sans-serif;
+    color: #002039;
+}
+
+/* Zmenšení písma menu, aby se lépe vešlo */
+
+ul.primary-menu {
+    font-size: 1.4rem;
+}
+
+/* Nastavení hlavního nadpisu písmem Skaut Bold */
+
+h1 {
+    font-family: skautbold;
+    font-weight: normal;
+}
+
+/* Nastavení písma The Mix pro podnadpisy */ 
+
+h2, h3, h4, h5, h6 {
+    font-family: themix, sans-serif;
+    font-weight: 700;
+}
+
+/* Vylepšení typografie nadpisů */
+
+h1, h2, h3, h4, h5, h6, .faux-heading {
+    letter-spacing: -0.004em;
+}
+
+/* Nastavení barev, které nejsou ovládané v sekci "Barvy" nastavení tématu */
+
+.site-description, body:not(.overlay-header) .toggle-inner .toggle-text, .widget .post-date, .widget .rss-date, .widget_archive li, .widget_categories li, .widget cite, .widget_pages li, .widget_meta li, .widget_nav_menu li, .powered-by-wordpress, .to-the-top, .singular .entry-header .post-meta, .singular:not(.overlay-header) .entry-header .post-meta a {
+    color: #0a567f;
+}
+
+.entry-title a {
+    color: #135f85 !important;
+    text-decoration: none;
+}
+
+body:not(.overlay-header) .primary-menu ul, .primary-menu ul {
+    background: #002039;
+    background-color: #002039;
+    color: #fff;
+}
+
+body:not(.overlay-header) .primary-menu > li > ul:after, .primary-menu ul::after {
+    border-bottom-color: #002039;
+}
+
+/* Vylepšení designu tlačítek */
+
+button, .button, .faux-button, .wp-block-button__link, .wp-block-file .wp-block-file__button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border-radius: 7px;
+}
+
+.has-text-color, .has-background, .has-primary-background-color, .has-secondary-background-color {
+border-radius: 7px;
+}
+
+.header-footer-group, body:not(.overlay-header) #site-header .toggle, .menu-modal .toggle {
+    color: #002039;
+}
+
+/* Vylepšení hlavičky webu – písma a designu */
+
+#site-header {
+    font-family: themix;
+    font-weight: 700;
+  background: transparent !important;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.cover-header {
+max-height: 75vh!important;
+}
+
+.cover-header-inner {
+padding: 0 0 40vh 0
+}
+
+.entry-header-inner, .archive-header-inner {
+    margin-top: 8rem;
+}
+
+/* Nastavení písma The Mix jako hlavního pro články */ 
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content
+.wp-caption-text,
+.widget_text p,
+.widget_text ol,
+.widget_text ul,
+.widget_text dl,
+.widget_text dt,
+.widget-content,
+.rssSummary {
+    font-family: themix;
+}
+
+.entry-content .wp-block-archives *,
+.entry-content .wp-block-categories *,
+.entry-content .wp-block-latest-posts *,
+.entry-content .wp-block-latest-comments *,
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content cite, .entry-content figcaption, .entry-content table, .entry-content address, .entry-content .wp-caption-text, .entry-content .wp-block-file, input, textarea, button, .button, .faux-button, .faux-button.more-link, .wp-block-button__link, .wp-block-file__button {
+    font-family: themix;
+}
+
+.has-drop-cap:not(:focus)::first-letter, .entry-content .wp-block-archives, .entry-content .wp-block-categories, .entry-content .wp-block-cover-image, .entry-content .wp-block-latest-comments, .entry-content .wp-block-latest-posts, .entry-content .wp-block-pullquote, .entry-content .wp-block-quote.is-large, .entry-content .wp-block-quote.is-style-large {
+    font-family: themix;
+}
+
+/* Nastavení tloušťky obrysů tabulky v patičce */ 
+
+.header-footer-group pre, .header-footer-group fieldset, .header-footer-group input, .header-footer-group textarea, .header-footer-group table, .header-footer-group table *, .footer-nav-widgets-wrapper, #site-footer, .footer-widgets-outer-wrapper, .footer-top {
+    border: 0px;
+    margin-top:-1vh;
+    margin-bottom:-1vh;
+}
